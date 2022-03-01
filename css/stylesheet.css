@@ -2,9 +2,6 @@ body {
   background-color: #3c4a50;
   color: #f2f4f3;
   font-family: "Oswald";
-}
-
-body {
   text-align: center;
 }
 
@@ -12,62 +9,6 @@ body {
   color: #ef946c !important;
 }
 
-.dropdown-item:hover {
-  color: #ef946c !important;
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #f2f4f3 !important;
-  text-decoration: none;
-  font-size: 20px;
-  overflow: hidden;
-  top: 5px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .form-group {
   padding: 10px;
-}
-
-nav a:hover {
-  color: #ef946c;
-}
-
-.navbar a:after {
-  content: "";
-  position: absolute;
-  background-color: #ef946c;
-  height: 2px;
-  width: 0%;
-  transform: translateX(10%);
-  left: 0%;
-  bottom: 0;
-  transition: 0.65s ease;
-}
-
-.navbar a:hover::after {
-  width: 100%;
-}
-
-.dropdown-menu.show {
-  width: 100%;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  right: 1px;
-  background: transparent;
-  border: none;
-  width: 0%;
-  color: #f2f4f3;
-  text-align: right;
-  transition: 0.6s ease;
 }
