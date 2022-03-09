@@ -2,18 +2,20 @@
 #navlinks a:after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 7%;
   transform: scaleX(0);
   height: 40px;
   left: 0;
-  background-color: #ca734e38;
-  transform-origin: bottom right;
+  background-color: #1c1f20;
+  transform-origin: bottom left;
   transition: transform 0.25s ease-out;
 }
+
 #navlinks a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -21,7 +23,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #ef946c;
+  background-color: #242d30;
   /* background-color: transparent; */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
@@ -29,7 +31,8 @@
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a,
+.uppernav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -56,7 +59,29 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #1c1c1c;
+  color: #7af94f;
+}
+
+/* Upper Nav */
+.uppernav a:hover {
+  color: #7af94f;
+}
+
+#uppernav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#uppernav a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  transform: scaleX(0);
+  height: 2px;
+  top: 32px;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */

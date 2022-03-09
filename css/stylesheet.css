@@ -1,14 +1,22 @@
 body {
-  background-color: #3c4a50;
-  color: #f2f4f3;
-  font-family: "Oswald";
+  background-color: #1c1f20;
+  color: #7af94f;
+  font-family: "Roboto Mono", monospace;
   text-align: center;
 }
 
 .colored {
-  color: #ef946c !important;
+  color: #242d30 !important;
 }
-
+/* 
 .form-group {
   padding: 10px;
+} */
+
+.app-badge {
+  fill: aliceblue;
+}
+
+.app-badge:hover {
+  fill: #7af94f;
 }

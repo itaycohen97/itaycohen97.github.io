@@ -12,11 +12,12 @@
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="css/sidenav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@555&family=Roboto+Condensed:wght@700&display=swap"
     />
-
     <title>Itay Cohen</title>
     <link
       rel="icon"
@@ -27,19 +28,221 @@
   <body>
     <!-- navbar inject -->
     <div id="nav-placeholder"></div>
-
     <script>
       $(function () {
         $("#nav-placeholder").load("nav.html");
       });
     </script>
     <!--end of Navigation bar-->
+    <!-- fix for phones
+    <div class="mb-5 mt-4 d-block d-lg-none">
+      <p class="h1 fs-6">Itay Cohen</p>
+    </div> -->
+    <div class="container px-5 py-4 mb-2">
+      <div class="row gx-5 mt-5 align-items-center">
+        <div class="col-lg-6">
+          <!-- Mashead text and app badges-->
+          <div class="mb-5 mb-lg-0 text-center text-lg-start">
+            <h1 class="display-1 lh-1 mb-3">Hi! Good to see you 👀</h1>
+            <p class="lead fw-normal text-muted mb-5">
+              I'm a 2nd year Computer Science & Entrepreneurship student at
+              Reichman University. A determined software engineer, Good at
+              problem solving and a self taught person.
+            </p>
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+              <a
+                class="me-lg-3 mb-4 mb-lg-0"
+                href="https://www.linkedin.com/in/itayco/"
+                target="_blank"
+                ><img
+                  class="app-badge"
+                  src="img/icons-linkedin.svg"
+                  alt="Linked In"
+              /></a>
+              <a
+                href="https://github.com/itaycohen97"
+                class="me-lg-3 mb-4 mb-lg-0"
+                target="_blank"
+                ><img
+                  class="app-badge"
+                  src="img/icons-github.svg"
+                  alt="Git Hub"
+              /></a>
+              <a href="https://www.instagram.com/itaycohen97/" target="_blank"
+                ><img
+                  class="app-badge"
+                  src="img/icons-instagram.svg"
+                  alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/financeweb-home.png" class="img-fluid w-50" alt="..." />
+        </div>
+      </div>
+    </div>
 
+    <!--Spotify Project-->
+    <section class="bg-gradient my-5 py-5" id="spotify">
+      <h1 class="pt-5">#1 - Spotify Playlist Generator</h1>
+      <div class="container px-5 my-5 py-4 mb-2">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-8">
+            <img src="img/spotify-topartists.png" class="img-fluid" alt="..." />
+          </div>
+          <div class="col-lg-4">
+            <!-- Mashead text and app badges-->
+            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-4 lh-1 mb-3">
+                Generate A Playlist, Based on your prefrences<br />
+              </h1>
+              <p class="lead fw-normal text-muted mb-5">
+                🎧 Your music your choice 🎧
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 my-5 py-4 mb-2">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            <img
+              src="img/spotify-playlist-iphone.png"
+              class="img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-4">
+            <!-- Mashead text and app badges-->
+            <div class="py-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-4 lh-1 mb-3 text-center">You Choose</h1>
+              <p class="lead fw-normal text-muted text-center">
+                Choode Genre, Popularity, Danceability and Energy
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <img src="img/spotify-playlist.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid px-5">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-5">
+            <!-- Feature item-->
+            <div class="text-center">
+              <h3 class="font-alt">Flask Server</h3>
+              <p class="text-muted mb-0">Python Based</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <!-- Feature item-->
+            <div class="text-center">
+              <h3 class="font-alt">Spotify API</h3>
+              <p class="text-muted mb-0">Based on simple REST principles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark my-5 py-5" id="finance">
+      <h1 class="pt-5">#2 - Stock Exchange Platform</h1>
+      <div class="container px-5 my-5 py-4 mb-2">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-4">
+            <!-- Mashead text and app badges-->
+            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-4 lh-1 mb-3">
+                Fantasy Stock Exchange Platform, With Realtime Data<br />
+              </h1>
+              <!-- <p class="lead fw-normal text-muted mb-5">
+                🎧 Your music your choice 🎧
+              </p> -->
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <img
+              src="img/financeweb-twodevices.png"
+              class="img-fluid"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid px-5 mt-5">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-5">
+            <!-- Feature item-->
+            <div class="text-center">
+              <h3 class="font-alt">IEX Cloud API</h3>
+              <p class="text-muted mb-0">
+                financial data infrastructure platform
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <!-- Feature item-->
+            <div class="text-center">
+              <h3 class="font-alt">SQL DB</h3>
+              <p class="text-muted mb-0">For Users & Store management</p>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5">
+          <div class="col-md-6 mb-5">
+            <!-- Feature item-->
+            <div class="text-center">
+              <h3 class="font-alt">Flask Server</h3>
+              <p class="text-muted mb-0">Python Based</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <!-- Feature item-->
+            <div class="text-center">
+              <h3 class="font-alt">Spotify API</h3>
+              <p class="text-muted mb-0">Based on simple REST principles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 my-5 py-4 mb-2">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            <img
+              src="img/spotify-playlist-iphone.png"
+              class="img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-4">
+            <!-- Mashead text and app badges-->
+            <div class="py-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-4 lh-1 mb-3 text-center">You Choose</h1>
+              <p class="lead fw-normal text-muted text-center">
+                Choose Genre, Popularity, Danceability and Energy
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <img src="img/spotify-playlist.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/da93ae0c45.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="js/typed.js/typed.min.js"></script> -->
   </body>
 </html>

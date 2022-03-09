@@ -1,26 +1,34 @@
-<div id="Sidenav" class="d-flex flex-column flex-shrink-0 sidenav">
+<div
+  id="Sidenav"
+  class="d-flex d-lg-none flex-column flex-shrink-0 sidenav sticky-top"
+>
   <div class="mb-auto" id="navlinks">
-    <a href="/">Home</a>
-    <a href="/watchlist">About Me</a>
+    <a href="/" class="mt-4">Home</a>
+    <!-- <a href="/watchlist">About Me</a> -->
     <!-- <p class="muted">te</p> -->
     <hr />
     <muted>Projects:</muted>
-    <a href="/history">Spotify Recommendation</a>
-    <a href="#">Stock Exchange Platform</a>
+    <a href="#spotify">Spotify Recommendation</a>
+    <a href="#finance">Stock Exchange Platform</a>
   </div>
 </div>
 <!-- Use any element to open the sidenav -->
 <div
-  class="d-flex bd-highlight mb-2 sticky-top shadow-sm"
-  style="background: inherit"
+  class="d-flex bd-highlight mb-2 pb-2 fixed-top shadow-sm"
+  style="background: linear-gradient(180deg, #1c1f20, #1c1f20e3)"
 >
   <span
-    class="ms-4 mt-2 mb-2"
-    style="font-size: 30px; cursor: pointer; z-index: 2000"
+    class="ms-4 mt-2 mb-2 d-lg-none fs-2"
+    style="cursor: pointer; z-index: 2000"
     onclick="toggleNav()"
-    >&#9776; Itay Cohen</span
-  >
-  <hr size="5" class="mb-1 hr" noshade />
+    >&#9776;
+  </span>
+  <p class="ms-4 my-2 d-none d-lg-block fs-6 h1">Itay Cohen</p>
+
+  <div class="ms-auto me-4 mt-2 d-none d-lg-block uppernav" id="uppernav">
+    <a href="#spotify" class="d-inline fs-6">Spotify Recommendation</a>
+    <a href="#finance" class="d-inline fs-6">Stock Exchange Platform</a>
+  </div>
 </div>
 
 <script src="js/main.js"></script>

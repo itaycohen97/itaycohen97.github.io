@@ -8,3 +8,9 @@ function toggleNav() {
     document.getElementById("Sidenav").style.width = decide_width();
   else document.getElementById("Sidenav").style.width = "0";
 }
+
+const sidenav_links = document.querySelectorAll("a");
+
+sidenav_links.forEach((element) => {
+  element.addEventListener("click", toggleNav);
+});
